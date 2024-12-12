@@ -1,6 +1,6 @@
-Projects 
+**Projects **
 
-Project 1
+**Project 1**
 Exploratory Data Analysis
 
 Project Description: Exploratory Data Analysis (EDA) on City of Vancouver Parking Tickets Dataset
