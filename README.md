@@ -240,7 +240,9 @@ The descriptive analysis of parking ticket data for water permits in Vancouver, 
 
 
 3. Compliance Patterns
+   
 •	High Ticket Issue Rate: Indicates robust enforcement mechanisms but may also reflect frequent non-compliance.
+
 •	Geographic Trends: Further analysis could reveal hotspots of non-compliance, enabling targeted enforcement or public awareness campaigns.
 
 
