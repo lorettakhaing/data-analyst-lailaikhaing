@@ -1,4 +1,5 @@
-**Projects **
+**Data Analytics Projects**
+
 
 **Project 1**
 Exploratory Data Analysis
@@ -95,7 +96,6 @@ Amazon S3
 AWS Glue DataBrew
 
 AWS Glue
-
 
 Insights and Findings
 
