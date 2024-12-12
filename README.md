@@ -32,6 +32,11 @@ The dataset contains information about parking tickets related to water permits 
 
 •	BI_ID: A unique identifier for each ticket.
 
+Draw io Diagram Data Analytic Platform (City of Vancouver – Domain- Parking Tickets) 
+
+![image](https://github.com/user-attachments/assets/1afdcda7-8478-46e2-a617-6d2ccc2b115a)
+
+
 Exploratory Analysis Question
 
 Are there more streets showing issued tickets in 2024 than in 2023?
