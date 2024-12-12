@@ -9,6 +9,7 @@ Project Description: Exploratory Data Analysis (EDA) on City of Vancouver Parkin
 Project Title: City of Vancouver Parking Ticket: An Exploratory Data Analysis
 
 **Objective: **
+
 The objective of this analysis is to investigate the factors contributing to the increase in water permit parking tickets issued in Vancouver from 2023 to 2024, focusing on whether additional streets were involved in ticket issuance in 2024. By comparing the distribution of tickets issued in 2023 and 2024 by street, the study aims to identify patterns or changes in street-level ticketing practices that could explain the observed increase.
 
 **Dataset:** 
@@ -44,8 +45,11 @@ Are there more streets showing issued tickets in 2024 than in 2023?
 This analysis aims to identify the correlation between the total number of issued tickets by street in 2023 and 2024 and determine whether additional streets contributed to the increase in ticket issuance in 2024.
 
 **Methodology:**
+
 Data Ingestion
+
 Objective: Upload and organize raw parking ticket data into AWS S3 for easy access and processing.
+
 Steps:
 1.	Created S3 buckets (pt-raw2-llk) to store the raw Excel data files.
 2.	Structured the data with subfolders by quarter (ingestion_quarter=4) to accommodate updates and frequent access requirements.
