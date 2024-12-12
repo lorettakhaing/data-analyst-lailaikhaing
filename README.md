@@ -111,5 +111,7 @@ From the analysis of parking ticket data for 2023 and 2024 in Vancouver, the fol
 2. Street-Level Analysis
 The analysis identified an increase in the number of streets issuing tickets in 2024 compared to 2023. This suggests broader geographic coverage of ticket enforcement.
    New streets in 2024 that were not present in the 2023 data contributed significantly to the rise in ticket issuance, indicating an expansion in the city’s monitoring or enforcement areas.
+   
+
 
 
