@@ -247,6 +247,7 @@ The UCW Scholar Activity dataset is **complete, valid, and ready** for analysis.
      - **Bar Charts**: Value distributions for key columns.  
      - **Top Distinct Values**: Most frequent values for each column.
 **Design**
+
 Draw io Diagram Data Analytic Platform (Scholar Activity UCW Dataset)
 
 ![image](https://github.com/user-attachments/assets/70a9bee4-f171-4c2f-9fa0-2917d15e5c1a)
