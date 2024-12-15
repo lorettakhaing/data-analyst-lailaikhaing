@@ -375,6 +375,94 @@ Draw io Diagram Data Analytic Platform (Research List UCW Dataset)
 ## **Conclusion**
 This project establishes a robust workflow for wrangling research data, ensuring it is analysis-ready and aligned with academic reporting requirements. By leveraging AWS tools, the process ensures scalability, efficiency, and reliability for managing research activity data at UCW.
 
+## **Project 4: Data Wrangling **
+
+### Data Quality Control for the City of Vancouver Parking Ticket Dataset 
+
+**Project Description:**  
+The project integrates data quality control measures within a robust data pipeline hosted on AWS, designed for the City of Vancouver Parking Ticket dataset. The system ensures the reliability, accuracy, and consistency of the dataset, leveraging scalable cloud-based services to streamline data ingestion, transformation, validation, and monitoring.
+
+
+### Data Pipeline Overview
+Based on the provided architecture diagram, the data pipeline for the parking ticket dataset is structured as follows:
+
+#### **1. Data Ingestion and Storage**
+- **Source:** The data team accesses parking ticket data via the internet, which is stored in **Amazon S3** buckets (`pt-tr2-llk`).
+- **Security:** Data is encrypted using AWS Key Management Service (KMS) with `pt-st-key-llk` for secure storage.
+
+
+#### **2. ETL Processing**
+- **AWS Glue Jobs:**  
+  - Multiple AWS Glue jobs are orchestrated for ETL tasks:
+    - Extract raw data from S3 buckets.
+    - Transform the data by removing duplicates, standardizing formats, and imputing missing values.
+    - Load the cleansed data back into S3 (`pt-st-datacatalog-llk`) for further analysis.
+
+- **Transformation Logic:**  
+  - Applied using AWS Glue transformations to adhere to predefined data quality rules.
+
+#### **3. Data Cataloging and Querying**
+- **AWS Glue Data Catalog:**  
+  - Metadata is maintained in AWS Glue's Data Catalog (`pt-st-datacatalog-llk`) to ensure seamless integration with analytics tools.  
+  - This enables efficient querying and exploration of structured datasets.
+
+- **Amazon Athena:**  
+  - Utilized to run SQL queries on the cleansed data stored in S3.  
+  - Queries validate data quality metrics (e.g., uniqueness, completeness) and generate analytical insights.
+
+#### **4. Validation and Reporting**
+- **SQL Query Outputs:**  
+  - Query results are validated against predefined KPIs and metrics (e.g., missing value rate <5%, duplicates = 0).  
+  - Outputs are stored in a secondary S3 bucket (`pt-cur-llk`).
+
+#### **5. Monitoring and Security**
+- **Amazon CloudWatch:**  
+  - Real-time monitoring of data pipeline activities.  
+  - Tracks ETL job status, error logs, and overall data quality trends.
+
+- **Amazon CloudTrail:**  
+  - Auditing is implemented to track access and changes to the data pipeline.  
+
+- **KMS Integration:**  
+  - Ensures data at rest and in transit is encrypted, maintaining security compliance.
+
+#### **6. Dashboard and Reporting**
+- **Visualization Tools:**  
+  - A dashboard (`pt-st-DAP-Dash-llk`) is implemented to provide insights into data quality metrics, job execution status, and KPIs.
+
+### Data Quality Control Measures (Detailed Implementation)
+**1. Current State Assessment:**  
+   - Identified data inconsistencies during ingestion (e.g., missing fields and invalid formats).  
+   - Integrated monitoring tools to log pipeline performance and highlight irregularities.  
+
+**2. Data Profiling:**  
+   - AWS Glue Data Catalog provides metadata profiling for fields such as ticket ID, timestamps, and fine amounts.  
+
+**3. Data Cleansing:**  
+   - SQL scripts and Glue transformations remove duplicates, correct invalid data, and standardize field formats (e.g., date to ISO 8601).  
+
+**4. Validation Rules:**  
+   - Athena SQL queries check data integrity post-transformation:
+     - Ticket IDs are unique.
+     - Fine amounts are within valid ranges.
+     - Missing critical fields are flagged for manual review.  
+
+**5. Monitoring and Reporting:**  
+   - CloudWatch dashboards offer real-time monitoring of ETL jobs.  
+   - Alerts are configured for anomalies like job failures or data deviations.
+
+### Deliverables
+- A secure and reliable data pipeline for the parking ticket dataset.  
+- Real-time dashboard visualizing data quality metrics and trends.  
+- Comprehensive documentation of the ETL process and validation framework.  
+- Cleaned and validated dataset ready for analysis and reporting.  
+
+**Design**
+
+Draw io Diagram Data Analytic Platform (City of Vancouver - Parking Tikcet Dataset )
+![image](https://github.com/user-attachments/assets/48f9b66c-9596-45af-9292-b2b310ea3be4)
+
+
 
 
 
