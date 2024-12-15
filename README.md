@@ -256,7 +256,7 @@ Data Profiling Screen AWS Glue Brew
 
  ![image](https://github.com/user-attachments/assets/ed978229-7c9f-46a7-9a40-63f508e56032)
 
-## **Project 4: Data Wrangling **
+## Project 4: Data Wrangling
 
 ## **Project Title**
 **Data Wrangling for Research List at UCW**
@@ -375,7 +375,9 @@ Draw io Diagram Data Analytic Platform (Research List UCW Dataset)
 ## **Conclusion**
 This project establishes a robust workflow for wrangling research data, ensuring it is analysis-ready and aligned with academic reporting requirements. By leveraging AWS tools, the process ensures scalability, efficiency, and reliability for managing research activity data at UCW.
 
-## **Project 4: Data Wrangling **
+## Project 5: Data Quality
+
+**Project Title:**  
 
 ### Data Quality Control for the City of Vancouver Parking Ticket Dataset 
 
