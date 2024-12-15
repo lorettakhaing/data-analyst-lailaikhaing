@@ -126,7 +126,7 @@ Draw io Diagram Data Analytic Platform (City of Vancouver – Domain- Parking Ti
 ![image](https://github.com/user-attachments/assets/9b74bb64-1973-437c-8e6f-5f83f65a9052)
 
 
-## **Project 3: iagnostic Analysis**
+## **Project 3: Diagnostic Analysis**
 
 ## Project Description  
 **Diagnostic Analysis of Scholar Activity List at UCW Academic Office**  
